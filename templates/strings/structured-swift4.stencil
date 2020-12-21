@@ -35,6 +35,12 @@ import Foundation
   {% for string in item.strings %}
   {% if not param.noComments %}
   /// {{string.translation}}
+  {% if string.commentLines %}
+  ///
+  {% for commentLine in string.commentLines %}
+  /// {{ commentLine|removeNewlines:"leading" }}
+  {% endfor %}
+  {% endif %}
   {% endif %}
   {% if string.types %}
   {{accessModifier}} static func {{string.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}}({% call parametersBlock string.types %}) -> String {

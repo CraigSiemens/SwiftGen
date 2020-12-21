@@ -47,6 +47,14 @@ final class StringsTests: XCTestCase {
     XCTDiffContexts(result, expected: "structuredonly", sub: .strings)
   }
 
+  func testComments() throws {
+    let parser = try Strings.Parser()
+    try parser.searchAndParse(path: Fixtures.path(for: "LocComments.strings", sub: .strings))
+
+    let result = parser.stencilContext()
+    XCTDiffContexts(result, expected: "comments", sub: .strings)
+  }
+
   func testMultipleFiles() throws {
     let parser = try Strings.Parser()
     try parser.searchAndParse(path: Fixtures.path(for: "Localizable.strings", sub: .strings))

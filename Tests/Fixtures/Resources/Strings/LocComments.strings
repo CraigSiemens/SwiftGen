@@ -1,0 +1,9 @@
+/* Title for an alert */
+"alert__title" = "Title of the alert";
+"alert__message" = "Some alert body there";
+/* A comment with no space above it */
+"apples.count" = "You have %d apples";
+
+/* A multiline
+   comment */
+"bananas.owner" = "Those %d bananas belong to %@.";
