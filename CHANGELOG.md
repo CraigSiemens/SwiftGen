@@ -16,6 +16,11 @@ _None_
 * XCAssets: you can now provide a trait collection when initializing a color or image asset (on iOS/tvOS).  
   [David Jennes](https://github.com/djbe)
   [#790](https://github.com/SwiftGen/SwiftGen/pull/790)
+* Files: Add new parser for accessing loose files in your project.  
+  [Mike Gray](https://github.com/mgray88)
+  [David Jennes](https://github.com/djbe)
+  [#665](https://github.com/SwiftGen/SwiftGen/issues/665)
+  [#734](https://github.com/SwiftGen/SwiftGen/pull/734)
 * Colors: The XML parser now supports Android color aliases (using `@color/...`).  
   [David Jennes](https://github.com/djbe)
   [#562](https://github.com/SwiftGen/SwiftGen/issues/562)
@@ -29,10 +34,27 @@ _None_
 * XCAssets: fixed some availability annotations that were incorrect.  
   [David Jennes](https://github.com/djbe)
   [#789](https://github.com/SwiftGen/SwiftGen/pull/789)
+* Strings: `objc-h` template now emits valid documentation comments.  
+  [@szotp](https://github.com/szotp)
+  [#822](https://github.com/SwiftGen/SwiftGen/pull/822)
+* Generate `xcfilelist`: Adds the template file path to the inputs `xcfilelist` (for custom templates).  
+  [Craig Siemens](https://github.com/CraigSiemens)
+  [#815](https://github.com/SwiftGen/SwiftGen/pull/815)
+* Strings: built-in templates now have better handling of multi-line translations.  
+  [@mrackwitz](https://github.com/mrackwitz)
+  [#774](https://github.com/SwiftGen/SwiftGen/pull/774)
 
 ### Internal Changes
 
-_None_
+* Switch to GitHub Actions.  
+  [#794](https://github.com/SwiftGen/SwiftGen/pull/794)
+  [David Jennes](https://github.com/djbe)
+* Switched the whole project over to use Swift Package Manager, restructuring some of the internals in the process.  
+  [David Jennes](https://github.com/djbe)
+  [#793](https://github.com/SwiftGen/SwiftGen/pull/793)
+* Updated Pods and Gems dependencies.  
+  [David Jennes](https://github.com/djbe)
+  [#827](https://github.com/SwiftGen/SwiftGen/pull/827)
 
 ## 6.4.0
 
