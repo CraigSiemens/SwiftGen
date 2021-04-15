@@ -10,8 +10,7 @@ tables:
         - "Int"
     - name: "bananas"
       strings:
-      - commentLines:
-        - "A comment with no space above it"
+      - comment: "A comment with no space above it"
         key: "bananas.owner"
         name: "owner"
         translation: "Those %d bananas belong to %@."
@@ -119,8 +118,7 @@ tables:
     - key: "alert__message"
       name: "alert__message"
       translation: "Some alert body there"
-    - commentLines:
-      - "Title for an alert"
+    - comment: "Title for an alert"
       key: "alert__title"
       name: "alert__title"
       translation: "Title of the alert"

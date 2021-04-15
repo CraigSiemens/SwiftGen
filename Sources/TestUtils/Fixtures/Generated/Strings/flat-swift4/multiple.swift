@@ -68,7 +68,7 @@ internal enum L10n {
     /// This string should have a multiline comment
     ///
     /// A multiline
-    /// comment
+    ///    comment
     internal static let multilineComment = L10n.tr("LocMultiline", "multiline-comment")
     /// another
     /// multi

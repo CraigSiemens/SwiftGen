@@ -37,10 +37,10 @@ import Foundation
   {% for line in string.translation|split:"\n" %}
   /// {{line}}
   {% endfor %}
-  {% if string.commentLines %}
+  {% if string.comment %}
   ///
-  {% for commentLine in string.commentLines %}
-  /// {{ commentLine|removeNewlines:"leading" }}
+  {% for commentLine in string.comment|split:"\n" %}
+  /// {{ commentLine }}
   {% endfor %}
   {% endif %}
   {% endif %}

@@ -29,7 +29,7 @@ extension Strings.Parser {
       ]
 
       if let comment = entry.comment {
-        result["commentLines"] = comment.components(separatedBy: .newlines)
+        result["comment"] = comment.newlineEscaped
       }
 
       if !entry.types.isEmpty {
