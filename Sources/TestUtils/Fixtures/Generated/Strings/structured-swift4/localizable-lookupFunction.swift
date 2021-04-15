@@ -12,8 +12,6 @@ import Foundation
 internal enum L10n {
   /// Some alert body there
   internal static var alertMessage: String { return L10n.tr("Localizable", "alert__message") }
-  /// Title of the alert
-  ///
   /// Title for an alert
   internal static var alertTitle: String { return L10n.tr("Localizable", "alert__title") }
   /// These are %3$@'s %1$d %2$@.
@@ -39,8 +37,6 @@ internal enum L10n {
   }
 
   internal enum Bananas {
-    /// Those %d bananas belong to %@.
-    ///
     /// A comment with no space above it
     internal static func owner(_ p1: Int, _ p2: Any) -> String {
       return L10n.tr("Localizable", "bananas.owner", p1, String(describing: p2))
