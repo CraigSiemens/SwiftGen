@@ -10,7 +10,9 @@ tables:
         - "Int"
     - name: "bananas"
       strings:
-      - key: "bananas.owner"
+      - commentLines:
+        - "A comment with no space above it"
+        key: "bananas.owner"
         name: "owner"
         translation: "Those %d bananas belong to %@."
         types:
@@ -99,7 +101,9 @@ tables:
     - key: "alert__message"
       name: "alert__message"
       translation: "Some alert body there"
-    - key: "alert__title"
+    - commentLines:
+      - "Title for an alert"
+      key: "alert__title"
       name: "alert__title"
       translation: "Title of the alert"
     - key: "ObjectOwnership"
@@ -155,6 +159,12 @@ tables:
     - key: "multiLine\\nKey"
       name: "multiLine\nKey"
       translation: "test"
+    - commentLines:
+      - "A multiline"
+      - "   comment"
+      key: "multiline-comment"
+      name: "multiline-comment"
+      translation: "This string should have a multiline comment"
     - key: "MULTILINE2"
       name: "MULTILINE2"
       translation: "another\\nmulti\\n    line"

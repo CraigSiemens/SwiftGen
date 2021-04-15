@@ -6,7 +6,9 @@ tables:
       - key: "alert__message"
         name: "message"
         translation: "Some alert body there"
-      - key: "alert__title"
+      - commentLines:
+        - "Title for an alert"
+        key: "alert__title"
         name: "title"
         translation: "Title of the alert"
     - name: "settings.user"
@@ -23,7 +25,9 @@ tables:
       translation: "You have %d apples"
       types:
       - "Int"
-    - key: "bananas.owner"
+    - commentLines:
+      - "A comment with no space above it"
+      key: "bananas.owner"
       name: "bananas.owner"
       translation: "Those %d bananas belong to %@."
       types:

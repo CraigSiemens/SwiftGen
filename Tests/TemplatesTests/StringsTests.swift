@@ -11,7 +11,6 @@ import XCTest
 final class StringsTests: XCTestCase {
   private enum Contexts {
     static let all = [
-      "comments",
       "empty",
       "localizable",
       "multiple",

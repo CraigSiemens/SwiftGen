@@ -43,6 +43,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*)multiline;
 /// test
 + (NSString*)multiLineNKey;
+/// This string should have a multiline comment
++ (NSString*)multilineComment;
 /// another
 /// multi
 ///     line

@@ -87,6 +87,9 @@ static NSString* tr(NSString *tableName, NSString *key, ...) {
 + (NSString*)multiLineNKey {
     return tr(@"LocMultiline", @"multiLine\nKey");
 }
++ (NSString*)multilineComment {
+    return tr(@"LocMultiline", @"multiline-comment");
+}
 + (NSString*)multiline2 {
     return tr(@"LocMultiline", @"MULTILINE2");
 }

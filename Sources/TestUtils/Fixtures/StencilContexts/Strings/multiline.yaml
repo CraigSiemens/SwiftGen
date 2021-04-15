@@ -24,6 +24,12 @@ tables:
     - key: "multiLine\\nKey"
       name: "multiLine\nKey"
       translation: "test"
+    - commentLines:
+      - "A multiline"
+      - "   comment"
+      key: "multiline-comment"
+      name: "multiline-comment"
+      translation: "This string should have a multiline comment"
     - key: "MULTILINE2"
       name: "MULTILINE2"
       translation: "another\\nmulti\\n    line"
