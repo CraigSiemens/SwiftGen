@@ -38,7 +38,7 @@ extension Strings {
           let comment = scanner.scanComment()
           if let key = scanner.scanQuotedString() {
             dict[key]?.comment = comment
-            
+
             // Scan in the value and ignore it.
             scanner.scanUpTo(.quote, into: nil)
             _ = scanner.scanQuotedString()
