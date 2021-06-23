@@ -78,6 +78,9 @@ static NSString* tr(NSString *tableName, NSString *key, ...) {
 + (NSString*)settingsUserProfileSectionHEADERTITLE {
     return tr(@"Localizable", @"settings.user__profile_section.HEADER_TITLE");
 }
++ (NSString*)whatHappensHere {
+    return tr(@"Localizable", @"what./*happens*/.here");
+}
 @end
 
 @implementation LocMultiline : NSObject

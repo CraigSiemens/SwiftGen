@@ -114,6 +114,14 @@ tables:
           name: "HEADER_TITLE"
           translation: "User Profile Settings"
       name: "settings"
+    - children:
+      - name: "/*happens*/"
+        strings:
+        - comment: "some comment"
+          key: "what./*happens*/.here"
+          name: "here"
+          translation: "hello world! /* still in string */"
+      name: "what"
     strings:
     - key: "alert__message"
       name: "alert__message"

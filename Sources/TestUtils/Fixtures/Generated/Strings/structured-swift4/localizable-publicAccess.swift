@@ -94,6 +94,13 @@ public enum L10n {
       public static let headerTitle = L10n.tr("Localizable", "settings.user__profile_section.HEADER_TITLE")
     }
   }
+
+  public enum What {
+    public enum Happens {
+      /// some comment
+      public static let here = L10n.tr("Localizable", "what./*happens*/.here")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

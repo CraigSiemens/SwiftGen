@@ -91,6 +91,12 @@ internal enum L10n {
         internal static let headerTitle = L10n.tr("Localizable", "settings.user__profile_section.HEADER_TITLE")
       }
     }
+    internal enum What {
+      internal enum Happens {
+        /// some comment
+        internal static let here = L10n.tr("Localizable", "what./*happens*/.here")
+      }
+    }
   }
   internal enum LocMultiline {
     /// multi

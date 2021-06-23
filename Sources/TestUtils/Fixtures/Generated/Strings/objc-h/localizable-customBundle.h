@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*)settingsUserProfileSectionFooterText;
 /// User Profile Settings
 + (NSString*)settingsUserProfileSectionHEADERTITLE;
+/// some comment
++ (NSString*)whatHappensHere;
 @end
 
 

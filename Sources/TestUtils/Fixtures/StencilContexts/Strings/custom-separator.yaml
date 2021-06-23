@@ -97,4 +97,8 @@ tables:
       - "Float"
       - "UnsafePointer<CChar>"
       - "UnsafeRawPointer"
+    - comment: "some comment"
+      key: "what./*happens*/.here"
+      name: "what./*happens*/.here"
+      translation: "hello world! /* still in string */"
   name: "Localizable"

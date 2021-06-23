@@ -53,6 +53,8 @@ internal enum XCTLoc {
   internal static let settingsUserProfileSectionFooterText = XCTLoc.tr("Localizable", "settings.user__profile_section.footer_text")
   /// User Profile Settings
   internal static let settingsUserProfileSectionHEADERTITLE = XCTLoc.tr("Localizable", "settings.user__profile_section.HEADER_TITLE")
+  /// some comment
+  internal static let whatHappensHere = XCTLoc.tr("Localizable", "what./*happens*/.here")
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 

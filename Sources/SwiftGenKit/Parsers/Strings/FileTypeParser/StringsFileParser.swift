@@ -36,8 +36,12 @@ extension Strings {
         let scanner = Scanner(string: string)
         while !scanner.isAtEnd {
           let comment = scanner.scanComment()
-          if let key = scanner.scanKey() {
+          if let key = scanner.scanQuotedString() {
             dict[key]?.comment = comment
+            
+            // Scan in the value and ignore it.
+            scanner.scanUpTo(.quote, into: nil)
+            _ = scanner.scanQuotedString()
           }
         }
       }
@@ -69,7 +73,7 @@ private extension Scanner {
     return comment.trimmingCharacters(in: .whitespacesAndNewlines)
   }
 
-  func scanKey() -> String? {
+  func scanQuotedString() -> String? {
     guard scanString(.quote, into: nil) else {
       return nil
     }

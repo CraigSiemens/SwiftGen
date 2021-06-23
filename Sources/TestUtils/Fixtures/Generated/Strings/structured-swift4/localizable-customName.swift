@@ -94,6 +94,13 @@ internal enum XCTLoc {
       internal static let headerTitle = XCTLoc.tr("Localizable", "settings.user__profile_section.HEADER_TITLE")
     }
   }
+
+  internal enum What {
+    internal enum Happens {
+      /// some comment
+      internal static let here = XCTLoc.tr("Localizable", "what./*happens*/.here")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

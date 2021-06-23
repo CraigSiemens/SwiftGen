@@ -53,6 +53,8 @@ internal enum L10n {
   internal static var settingsUserProfileSectionFooterText: String { return L10n.tr("Localizable", "settings.user__profile_section.footer_text") }
   /// User Profile Settings
   internal static var settingsUserProfileSectionHEADERTITLE: String { return L10n.tr("Localizable", "settings.user__profile_section.HEADER_TITLE") }
+  /// some comment
+  internal static var whatHappensHere: String { return L10n.tr("Localizable", "what./*happens*/.here") }
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 
